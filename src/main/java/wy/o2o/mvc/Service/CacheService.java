@@ -1,4 +1,4 @@
-package wy.o2o.mvc.Service;
+package wy.o2o.mvc.service;
 
 public interface CacheService {
 	/**

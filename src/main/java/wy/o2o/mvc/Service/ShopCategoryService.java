@@ -1,10 +1,10 @@
-package wy.o2o.mvc.Service;
+package wy.o2o.mvc.service;
 
 import java.util.List;
 
-import wy.o2o.mvc.Dto.ImageHolder;
-import wy.o2o.mvc.Dto.ShopCategoryExecution;
-import wy.o2o.mvc.Entity.ShopCategory;
+import wy.o2o.mvc.dto.ImageHolder;
+import wy.o2o.mvc.dto.ShopCategoryExecution;
+import wy.o2o.mvc.entity.ShopCategory;
 
 public interface ShopCategoryService {
 	public static final String SCLISTKEY = "shopcategorylist";

@@ -1,4 +1,4 @@
-package wy.o2o.mvc.Util;
+package wy.o2o.mvc.util;
 
 import java.util.List;
 import java.util.Map;
@@ -306,7 +306,9 @@ public class JedisUtil {
 
 	// *******************************************Strings*******************************************//
 	public class Strings {
-		/**
+
+
+        /**
 		 * 根据key获取记录
 		 * 
 		 * @param String

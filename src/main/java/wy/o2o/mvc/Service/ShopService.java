@@ -1,13 +1,10 @@
-package wy.o2o.mvc.Service;
+package wy.o2o.mvc.service;
 
-import java.io.File;
-import java.io.InputStream;
+import wy.o2o.mvc.dto.ImageHolder;
 
-import wy.o2o.mvc.Dto.ImageHolder;
-
-import wy.o2o.mvc.Dto.ShopExecution;
-import wy.o2o.mvc.Entity.Shop;
-import wy.o2o.mvc.Exceptions.ShopOperationException;
+import wy.o2o.mvc.dto.ShopExecution;
+import wy.o2o.mvc.entity.Shop;
+import wy.o2o.mvc.exceptions.ShopOperationException;
 
 public interface ShopService {
 	

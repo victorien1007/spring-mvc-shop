@@ -1,9 +1,7 @@
-package wy.o2o.mvc.Web.shopadmin;
+package wy.o2o.mvc.web.shopadmin;
 
 import java.io.File;
-import java.io.FileOutputStream;
 import java.io.IOException;
-import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -22,23 +20,22 @@ import org.springframework.web.multipart.commons.CommonsMultipartResolver;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 
-import wy.o2o.mvc.Dao.AreaDao;
-import wy.o2o.mvc.Dto.ImageHolder;
+import wy.o2o.mvc.dto.ImageHolder;
 
-import wy.o2o.mvc.Dto.ShopExecution;
-import wy.o2o.mvc.Entity.Area;
-import wy.o2o.mvc.Entity.PersonInfo;
-import wy.o2o.mvc.Entity.Shop;
-import wy.o2o.mvc.Entity.ShopCategory;
-import wy.o2o.mvc.Enums.ShopStateEnum;
-import wy.o2o.mvc.Exceptions.ShopOperationException;
-import wy.o2o.mvc.Service.AreaService;
-import wy.o2o.mvc.Service.ShopService;
-import wy.o2o.mvc.Service.ShopCategoryService;
-import wy.o2o.mvc.Util.CodeUtil;
-import wy.o2o.mvc.Util.HttpServletRequestUtil;
-import wy.o2o.mvc.Util.ImageUtil;
-import wy.o2o.mvc.Util.PathUtil;
+import wy.o2o.mvc.dto.ShopExecution;
+import wy.o2o.mvc.entity.Area;
+import wy.o2o.mvc.entity.PersonInfo;
+import wy.o2o.mvc.entity.Shop;
+import wy.o2o.mvc.entity.ShopCategory;
+import wy.o2o.mvc.enums.ShopStateEnum;
+import wy.o2o.mvc.exceptions.ShopOperationException;
+import wy.o2o.mvc.service.AreaService;
+import wy.o2o.mvc.service.ShopService;
+import wy.o2o.mvc.service.ShopCategoryService;
+import wy.o2o.mvc.util.CodeUtil;
+import wy.o2o.mvc.util.HttpServletRequestUtil;
+import wy.o2o.mvc.util.ImageUtil;
+import wy.o2o.mvc.util.PathUtil;
 
 @Controller
 @RequestMapping("/shopadmin")

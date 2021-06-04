@@ -1,9 +1,9 @@
-package wy.o2o.mvc.Dto;
+package wy.o2o.mvc.dto;
 
 import java.util.List;
 
-import wy.o2o.mvc.Entity.Shop;
-import wy.o2o.mvc.Enums.ShopStateEnum;
+import wy.o2o.mvc.entity.Shop;
+import wy.o2o.mvc.enums.ShopStateEnum;
 
 public class ShopExecution {
 	//结果状态

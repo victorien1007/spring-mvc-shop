@@ -1,12 +1,11 @@
-package wy.o2o.mvc.Service.impl;
+package wy.o2o.mvc.service.impl;
 
-import java.util.Set;
-
+import wy.o2o.mvc.cache.JedisUtil;
+import wy.o2o.mvc.service.CacheService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import wy.o2o.mvc.Util.JedisUtil;
-import wy.o2o.mvc.Service.CacheService;
+import java.util.Set;
 
 @Service
 public class CacheServiceImpl implements CacheService {

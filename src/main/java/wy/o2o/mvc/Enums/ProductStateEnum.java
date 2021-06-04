@@ -1,4 +1,4 @@
-package wy.o2o.mvc.Enums;
+package wy.o2o.mvc.enums;
 
 public enum ProductStateEnum {
 	OFFLINE(-1, "非法商品"), 

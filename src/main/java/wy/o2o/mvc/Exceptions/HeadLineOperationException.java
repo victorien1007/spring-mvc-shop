@@ -1,4 +1,4 @@
-package wy.o2o.mvc.Exceptions;
+package wy.o2o.mvc.exceptions;
 
 public class HeadLineOperationException extends RuntimeException {
 

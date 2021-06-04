@@ -1,4 +1,4 @@
-package wy.o2o.mvc.Util;
+package wy.o2o.mvc.util;
 
 public class PageCalculator {
 	public static int calculateRowIndex(int pageIndex, int pageSize) {

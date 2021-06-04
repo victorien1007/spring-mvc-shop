@@ -1,4 +1,4 @@
-package wy.o2o.mvc.Web.shopadmin;
+package wy.o2o.mvc.web.shopadmin;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;

@@ -1,8 +1,8 @@
-package wy.o2o.mvc.Dao;
+package wy.o2o.mvc.dao;
 
 import java.util.List;
 
-import wy.o2o.mvc.Entity.ProductImg;
+import wy.o2o.mvc.entity.ProductImg;
 
 public interface ProductImgDao {
 	/**

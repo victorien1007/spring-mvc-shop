@@ -1,4 +1,4 @@
-package wy.o2o.mvc.Util;
+package wy.o2o.mvc.util;
 
 import redis.clients.jedis.JedisPool;
 import redis.clients.jedis.JedisPoolConfig;

@@ -1,9 +1,9 @@
-package wy.o2o.mvc.Dto;
+package wy.o2o.mvc.dto;
 
 import java.util.List;
 
-import wy.o2o.mvc.Entity.PersonInfo;
-import wy.o2o.mvc.Enums.PersonInfoStateEnum;
+import wy.o2o.mvc.entity.PersonInfo;
+import wy.o2o.mvc.enums.PersonInfoStateEnum;
 
 /**
  * 封装执行后结果

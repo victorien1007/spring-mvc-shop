@@ -1,10 +1,10 @@
-package wy.o2o.mvc.Dao;
+package wy.o2o.mvc.dao;
 
 import java.util.List;
 
 import org.apache.ibatis.annotations.Param;
 
-import wy.o2o.mvc.Entity.HeadLine;
+import wy.o2o.mvc.entity.HeadLine;
 
 public interface HeadLineDao {
 	List<HeadLine> queryHeadLine(@Param("headLineCondition") HeadLine headLineCondition);

@@ -1,4 +1,4 @@
-package wy.o2o.mvc.Entity;
+package wy.o2o.mvc.entity;
 
 import java.util.Date;
 

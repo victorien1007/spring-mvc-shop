@@ -1,7 +1,7 @@
-package wy.o2o.mvc.Service;
+package wy.o2o.mvc.service;
 
-import wy.o2o.mvc.Dto.PersonInfoExecution;
-import wy.o2o.mvc.Entity.PersonInfo;
+import wy.o2o.mvc.dto.PersonInfoExecution;
+import wy.o2o.mvc.entity.PersonInfo;
 
 public interface PersonInfoService {
 

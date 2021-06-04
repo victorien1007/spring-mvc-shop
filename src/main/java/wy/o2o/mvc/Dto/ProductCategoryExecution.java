@@ -1,9 +1,9 @@
-package wy.o2o.mvc.Dto;
+package wy.o2o.mvc.dto;
 
 import java.util.List;
 
-import wy.o2o.mvc.Entity.ProductCategory;
-import wy.o2o.mvc.Enums.ProductCategoryStateEnum;
+import wy.o2o.mvc.entity.ProductCategory;
+import wy.o2o.mvc.enums.ProductCategoryStateEnum;
 
 public class ProductCategoryExecution {
 	// 结果状态

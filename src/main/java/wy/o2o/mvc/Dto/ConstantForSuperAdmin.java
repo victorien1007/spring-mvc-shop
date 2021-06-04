@@ -1,4 +1,4 @@
-package wy.o2o.mvc.Dto;
+package wy.o2o.mvc.dto;
 
 public class ConstantForSuperAdmin {
 	public static final String PAGE_SIZE = "rows";

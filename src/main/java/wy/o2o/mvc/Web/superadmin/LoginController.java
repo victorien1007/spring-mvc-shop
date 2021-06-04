@@ -1,4 +1,4 @@
-package wy.o2o.mvc.Web.superadmin;
+package wy.o2o.mvc.web.superadmin;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -11,10 +11,10 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 
-import wy.o2o.mvc.Entity.LocalAuth;
-import wy.o2o.mvc.Service.LocalAuthService;
-import wy.o2o.mvc.Util.HttpServletRequestUtil;
-import wy.o2o.mvc.Util.MD5;
+import wy.o2o.mvc.dto.LocalAuthExecution;
+import wy.o2o.mvc.entity.LocalAuth;
+import wy.o2o.mvc.service.LocalAuthService;
+import wy.o2o.mvc.util.HttpServletRequestUtil;
 
 @Controller
 @RequestMapping("/superadmin")
@@ -53,6 +53,38 @@ public class LoginController {
 				modelMap.put("success", false);
 				modelMap.put("errMsg", "用户名或密码错误");
 			}
+		} else {
+			modelMap.put("success", false);
+			modelMap.put("errMsg", "用户名和密码均不能为空");
+		}
+		return modelMap;
+	}
+
+	/**
+	 * 注册
+	 *
+	 * @param request
+	 * @return
+	 */
+	@RequestMapping(value = "/register", method = RequestMethod.POST)
+	@ResponseBody
+	private Map<String, Object> register(HttpServletRequest request) {
+		Map<String, Object> modelMap = new HashMap<String, Object>();
+		// 获取前端传递过来的帐号和密码
+		String userName = HttpServletRequestUtil.getString(request, "userName");
+		String password = HttpServletRequestUtil.getString(request, "password");
+		// 空值判断
+		if (userName != null && password != null) {
+			// 获取本地帐号授权信息
+			LocalAuthExecution localAuth = localAuthService.registerLocalAuthByUsernameAndPwd(userName, password,3);
+				if (localAuth.getState()==0) {
+					modelMap.put("success", true);
+
+					modelMap.put("errMsg", "注册成功");
+				}else {
+					modelMap.put("success", false);
+					modelMap.put("errMsg", "注册出现错误");
+				}
 		} else {
 			modelMap.put("success", false);
 			modelMap.put("errMsg", "用户名和密码均不能为空");

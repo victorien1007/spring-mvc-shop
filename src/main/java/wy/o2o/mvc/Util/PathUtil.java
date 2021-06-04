@@ -1,4 +1,4 @@
-package wy.o2o.mvc.Util;
+package wy.o2o.mvc.util;
 
 public class PathUtil {
 	private static String seperator=System.getProperty("file.separator");

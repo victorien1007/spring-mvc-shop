@@ -1,4 +1,4 @@
-package wy.o2o.mvc.Web.superadmin;
+package wy.o2o.mvc.web.superadmin;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -13,8 +13,8 @@ import org.springframework.web.bind.annotation.ResponseBody;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import wy.o2o.mvc.Entity.Area;
-import wy.o2o.mvc.Service.AreaService;
+import wy.o2o.mvc.entity.Area;
+import wy.o2o.mvc.service.AreaService;
 
 @Controller
 @RequestMapping("/superadmin")

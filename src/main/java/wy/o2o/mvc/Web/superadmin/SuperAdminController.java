@@ -1,4 +1,4 @@
-package wy.o2o.mvc.Web.superadmin;
+package wy.o2o.mvc.web.superadmin;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;

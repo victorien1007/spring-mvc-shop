@@ -1,4 +1,4 @@
-package wy.o2o.mvc.Service;
+package wy.o2o.mvc.service;
 
 import static org.junit.Assert.assertEquals;
 
@@ -15,13 +15,13 @@ import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import wy.o2o.mvc.Base.BaseTest;
-import wy.o2o.mvc.Dto.ImageHolder;
-import wy.o2o.mvc.Dto.ProductExecution;
-import wy.o2o.mvc.Entity.Product;
-import wy.o2o.mvc.Entity.ProductCategory;
-import wy.o2o.mvc.Entity.Shop;
-import wy.o2o.mvc.Enums.ProductStateEnum;
-import wy.o2o.mvc.Exceptions.ShopOperationException;
+import wy.o2o.mvc.dto.ImageHolder;
+import wy.o2o.mvc.dto.ProductExecution;
+import wy.o2o.mvc.entity.Product;
+import wy.o2o.mvc.entity.ProductCategory;
+import wy.o2o.mvc.entity.Shop;
+import wy.o2o.mvc.enums.ProductStateEnum;
+import wy.o2o.mvc.exceptions.ShopOperationException;
 
 public class ProductServiceTest extends BaseTest {
 	@Autowired

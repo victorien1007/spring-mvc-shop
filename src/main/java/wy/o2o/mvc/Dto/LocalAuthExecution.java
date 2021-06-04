@@ -1,9 +1,9 @@
-package wy.o2o.mvc.Dto;
+package wy.o2o.mvc.dto;
 
 import java.util.List;
 
-import wy.o2o.mvc.Entity.LocalAuth;
-import wy.o2o.mvc.Enums.LocalAuthStateEnum;
+import wy.o2o.mvc.entity.LocalAuth;
+import wy.o2o.mvc.enums.LocalAuthStateEnum;
 
 public class LocalAuthExecution {
 	// 结果状态

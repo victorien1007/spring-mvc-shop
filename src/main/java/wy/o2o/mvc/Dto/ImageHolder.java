@@ -1,4 +1,4 @@
-package wy.o2o.mvc.Dto;
+package wy.o2o.mvc.dto;
 
 import java.io.InputStream;
 

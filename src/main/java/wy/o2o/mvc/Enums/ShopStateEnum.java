@@ -1,4 +1,4 @@
-package wy.o2o.mvc.Enums;
+package wy.o2o.mvc.enums;
 
 public enum ShopStateEnum {
 	CHECK(0,"审核中"),

@@ -1,10 +1,10 @@
-package wy.o2o.mvc.Dao;
+package wy.o2o.mvc.dao;
 
 import java.util.Date;
 
 import org.apache.ibatis.annotations.Param;
 
-import wy.o2o.mvc.Entity.LocalAuth;
+import wy.o2o.mvc.entity.LocalAuth;
 
 public interface LocalAuthDao {
 
@@ -32,6 +32,7 @@ public interface LocalAuthDao {
 	 * @return
 	 */
 	int insertLocalAuth(LocalAuth localAuth);
+
 
 	/**
 	 * 通过userId,username,password更改密码

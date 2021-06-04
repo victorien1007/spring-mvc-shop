@@ -1,4 +1,4 @@
-package wy.o2o.mvc.Util;
+package wy.o2o.mvc.util;
 
 import javax.servlet.http.HttpServletRequest;
 

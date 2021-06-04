@@ -1,4 +1,4 @@
-package wy.o2o.mvc.Service;
+package wy.o2o.mvc.service;
 
 import static org.junit.Assert.assertEquals;
 
@@ -8,7 +8,7 @@ import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import wy.o2o.mvc.Base.BaseTest;
-import wy.o2o.mvc.Entity.Area;
+import wy.o2o.mvc.entity.Area;
 
 public class AreaServiceTest extends BaseTest {
 	@Autowired

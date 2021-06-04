@@ -1,4 +1,4 @@
-package wy.o2o.mvc.Dao;
+package wy.o2o.mvc.dao;
 
 import static org.junit.Assert.assertEquals;
 
@@ -12,7 +12,7 @@ import org.junit.runners.MethodSorters;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import wy.o2o.mvc.Base.BaseTest;
-import wy.o2o.mvc.Entity.ProductImg;
+import wy.o2o.mvc.entity.ProductImg;
 
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
 public class ProductImgDaoTest extends BaseTest {

@@ -1,25 +1,24 @@
-package wy.o2o.mvc.Service.impl;
+package wy.o2o.mvc.service.impl;
 
-import java.util.ArrayList;
-import java.util.Date;
-import java.util.List;
-
+import wy.o2o.mvc.dao.ProductDao;
+import wy.o2o.mvc.dao.ProductImgDao;
+import wy.o2o.mvc.dto.ImageHolder;
+import wy.o2o.mvc.dto.ProductExecution;
+import wy.o2o.mvc.entity.Product;
+import wy.o2o.mvc.entity.ProductImg;
+import wy.o2o.mvc.enums.ProductStateEnum;
+import wy.o2o.mvc.exceptions.ProductOperationException;
+import wy.o2o.mvc.service.ProductService;
+import wy.o2o.mvc.util.ImageUtil;
+import wy.o2o.mvc.util.PageCalculator;
+import wy.o2o.mvc.util.PathUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import wy.o2o.mvc.Dao.ProductDao;
-import wy.o2o.mvc.Dao.ProductImgDao;
-import wy.o2o.mvc.Dto.ImageHolder;
-import wy.o2o.mvc.Dto.ProductExecution;
-import wy.o2o.mvc.Entity.Product;
-import wy.o2o.mvc.Entity.ProductImg;
-import wy.o2o.mvc.Enums.ProductStateEnum;
-import wy.o2o.mvc.Exceptions.ProductOperationException;
-import wy.o2o.mvc.Service.ProductService;
-import wy.o2o.mvc.Util.ImageUtil;
-import wy.o2o.mvc.Util.PageCalculator;
-import wy.o2o.mvc.Util.PathUtil;
+import java.util.ArrayList;
+import java.util.Date;
+import java.util.List;
 
 @Service
 public class ProductServiceImpl implements ProductService {

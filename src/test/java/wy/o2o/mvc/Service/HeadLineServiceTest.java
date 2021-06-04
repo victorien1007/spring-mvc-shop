@@ -1,4 +1,4 @@
-package wy.o2o.mvc.Service;
+package wy.o2o.mvc.service;
 
 import java.util.List;
 
@@ -6,7 +6,7 @@ import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import wy.o2o.mvc.Base.BaseTest;
-import wy.o2o.mvc.Entity.HeadLine;
+import wy.o2o.mvc.entity.HeadLine;
 
 public class HeadLineServiceTest extends BaseTest {
 	@Autowired

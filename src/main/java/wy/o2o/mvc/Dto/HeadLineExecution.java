@@ -1,9 +1,9 @@
-package wy.o2o.mvc.Dto;
+package wy.o2o.mvc.dto;
 
 import java.util.List;
 
-import wy.o2o.mvc.Entity.HeadLine;
-import wy.o2o.mvc.Enums.HeadLineStateEnum;
+import wy.o2o.mvc.entity.HeadLine;
+import wy.o2o.mvc.enums.HeadLineStateEnum;
 
 public class HeadLineExecution {
 	// 结果状态

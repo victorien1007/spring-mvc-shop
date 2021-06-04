@@ -1,4 +1,4 @@
-package wy.o2o.mvc.Service;
+package wy.o2o.mvc.service;
 
 import java.util.List;
 
@@ -6,7 +6,7 @@ import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import wy.o2o.mvc.Base.BaseTest;
-import wy.o2o.mvc.Entity.ShopCategory;
+import wy.o2o.mvc.entity.ShopCategory;
 
 public class ShopCategoryServiceTest extends BaseTest {
 	@Autowired

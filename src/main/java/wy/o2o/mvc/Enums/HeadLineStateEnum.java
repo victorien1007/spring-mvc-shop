@@ -1,4 +1,4 @@
-package wy.o2o.mvc.Enums;
+package wy.o2o.mvc.enums;
 
 public enum HeadLineStateEnum {
 	SUCCESS(0, "创建成功"), INNER_ERROR(-1001, "操作失败"), EMPTY(-1002, "头条信息为空");

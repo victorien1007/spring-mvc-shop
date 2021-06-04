@@ -1,18 +1,19 @@
-package wy.o2o.mvc.Service.impl;
+package wy.o2o.mvc.service.impl;
 
-import java.util.Date;
-
+import wy.o2o.mvc.dao.LocalAuthDao;
+import wy.o2o.mvc.dao.PersonInfoDao;
+import wy.o2o.mvc.dto.LocalAuthExecution;
+import wy.o2o.mvc.entity.LocalAuth;
+import wy.o2o.mvc.entity.PersonInfo;
+import wy.o2o.mvc.enums.LocalAuthStateEnum;
+import wy.o2o.mvc.exceptions.LocalAuthOperationException;
+import wy.o2o.mvc.service.LocalAuthService;
+import wy.o2o.mvc.util.MD5;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import wy.o2o.mvc.Dao.LocalAuthDao;
-import wy.o2o.mvc.Dto.LocalAuthExecution;
-import wy.o2o.mvc.Entity.LocalAuth;
-import wy.o2o.mvc.Enums.LocalAuthStateEnum;
-import wy.o2o.mvc.Exceptions.LocalAuthOperationException;
-import wy.o2o.mvc.Service.LocalAuthService;
-import wy.o2o.mvc.Util.MD5;
+import java.util.Date;
 
 @Service
 public class LocalAuthServiceImpl implements LocalAuthService {
@@ -20,9 +21,32 @@ public class LocalAuthServiceImpl implements LocalAuthService {
 	@Autowired
 	private LocalAuthDao localAuthDao;
 
+	@Autowired
+	private PersonInfoDao personInfoDao;
+
 	@Override
 	public LocalAuth getLocalAuthByUsernameAndPwd(String username, String password) {
-		return localAuthDao.queryLocalByUserNameAndPwd(username, MD5.getMd5(password));
+		return localAuthDao.queryLocalByUserNameAndPwd(username, password);
+	}
+
+	@Override
+	@Transactional
+	public LocalAuthExecution registerLocalAuthByUsernameAndPwd(String username, String password, int userType) {
+
+		if (username == null || password == null || userType <1||userType>3) {
+			return new LocalAuthExecution(LocalAuthStateEnum.NULL_AUTH_INFO);
+		}
+		PersonInfo person=new PersonInfo();
+		person.setName(username);
+		person.setUserType(userType);
+		long pid=personInfoDao.insertPersonInfo(new PersonInfo());
+		person.setUserId(pid);
+		LocalAuth local=new LocalAuth();
+		local.setUsername(username);
+		local.setPassword(password);
+		local.setPersonInfo(person);
+		localAuthDao.insertLocalAuth(local);
+		return new LocalAuthExecution(LocalAuthStateEnum.SUCCESS, local);
 	}
 
 	@Override
@@ -49,7 +73,7 @@ public class LocalAuthServiceImpl implements LocalAuthService {
 			localAuth.setCreateTime(new Date());
 			localAuth.setLastEditTime(new Date());
 			// 对密码进行MD5加密
-			localAuth.setPassword(MD5.getMd5(localAuth.getPassword()));
+			localAuth.setPassword(localAuth.getPassword());
 			int effectedNum = localAuthDao.insertLocalAuth(localAuth);
 			// 判断创建是否成功
 			if (effectedNum <= 0) {

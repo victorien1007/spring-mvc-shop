@@ -1,4 +1,4 @@
-package wy.o2o.mvc.Enums;
+package wy.o2o.mvc.enums;
 
 /**
  * 使用枚举表述常量数据字典

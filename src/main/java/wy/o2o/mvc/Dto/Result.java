@@ -1,4 +1,4 @@
-package wy.o2o.mvc.Dto;
+package wy.o2o.mvc.dto;
 
 /**
  * 封装json对象，所有返回结果都使用它

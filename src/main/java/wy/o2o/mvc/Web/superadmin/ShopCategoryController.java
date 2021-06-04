@@ -1,4 +1,4 @@
-package wy.o2o.mvc.Web.superadmin;
+package wy.o2o.mvc.web.superadmin;
 
 import java.io.IOException;
 import java.net.URLDecoder;
@@ -19,13 +19,13 @@ import org.springframework.web.multipart.commons.CommonsMultipartFile;
 import org.springframework.web.multipart.commons.CommonsMultipartResolver;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import wy.o2o.mvc.Dto.ConstantForSuperAdmin;
-import wy.o2o.mvc.Dto.ImageHolder;
-import wy.o2o.mvc.Dto.ShopCategoryExecution;
-import wy.o2o.mvc.Entity.ShopCategory;
-import wy.o2o.mvc.Enums.ShopCategoryStateEnum;
-import wy.o2o.mvc.Service.ShopCategoryService;
-import wy.o2o.mvc.Util.HttpServletRequestUtil;
+import wy.o2o.mvc.dto.ConstantForSuperAdmin;
+import wy.o2o.mvc.dto.ImageHolder;
+import wy.o2o.mvc.dto.ShopCategoryExecution;
+import wy.o2o.mvc.entity.ShopCategory;
+import wy.o2o.mvc.enums.ShopCategoryStateEnum;
+import wy.o2o.mvc.service.ShopCategoryService;
+import wy.o2o.mvc.util.HttpServletRequestUtil;
 
 @Controller
 @RequestMapping("/superadmin")

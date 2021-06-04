@@ -1,4 +1,4 @@
-package wy.o2o.mvc.Dao;
+package wy.o2o.mvc.dao;
 
 import static org.junit.Assert.assertEquals;
 
@@ -8,7 +8,7 @@ import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import wy.o2o.mvc.Base.BaseTest;
-import wy.o2o.mvc.Entity.HeadLine;
+import wy.o2o.mvc.entity.HeadLine;
 
 public class HeadLineDaoTest extends BaseTest {
 	@Autowired

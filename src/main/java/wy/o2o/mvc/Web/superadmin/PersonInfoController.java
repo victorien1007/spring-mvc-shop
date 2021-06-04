@@ -1,4 +1,4 @@
-package wy.o2o.mvc.Web.superadmin;
+package wy.o2o.mvc.web.superadmin;
 
 import java.net.URLDecoder;
 import java.util.ArrayList;
@@ -13,12 +13,12 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 
-import wy.o2o.mvc.Dto.ConstantForSuperAdmin;
-import wy.o2o.mvc.Dto.PersonInfoExecution;
-import wy.o2o.mvc.Entity.PersonInfo;
-import wy.o2o.mvc.Enums.PersonInfoStateEnum;
-import wy.o2o.mvc.Service.PersonInfoService;
-import wy.o2o.mvc.Util.HttpServletRequestUtil;
+import wy.o2o.mvc.dto.ConstantForSuperAdmin;
+import wy.o2o.mvc.dto.PersonInfoExecution;
+import wy.o2o.mvc.entity.PersonInfo;
+import wy.o2o.mvc.enums.PersonInfoStateEnum;
+import wy.o2o.mvc.service.PersonInfoService;
+import wy.o2o.mvc.util.HttpServletRequestUtil;
 
 @Controller
 @RequestMapping("/superadmin")

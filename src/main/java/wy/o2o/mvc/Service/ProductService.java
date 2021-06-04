@@ -1,11 +1,11 @@
-package wy.o2o.mvc.Service;
+package wy.o2o.mvc.service;
 
 import java.util.List;
 
-import wy.o2o.mvc.Dto.ImageHolder;
-import wy.o2o.mvc.Dto.ProductExecution;
-import wy.o2o.mvc.Entity.Product;
-import wy.o2o.mvc.Exceptions.ProductOperationException;
+import wy.o2o.mvc.dto.ImageHolder;
+import wy.o2o.mvc.dto.ProductExecution;
+import wy.o2o.mvc.entity.Product;
+import wy.o2o.mvc.exceptions.ProductOperationException;
 
 public interface ProductService {
 	/**

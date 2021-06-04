@@ -1,4 +1,4 @@
-package wy.o2o.mvc.Enums;
+package wy.o2o.mvc.enums;
 
 public enum ProductCategoryStateEnum {
 	SUCCESS(1, "创建成功"), 

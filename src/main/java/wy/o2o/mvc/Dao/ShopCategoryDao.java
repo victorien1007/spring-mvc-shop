@@ -1,10 +1,10 @@
-package  wy.o2o.mvc.Dao;
+package  wy.o2o.mvc.dao;
 
 import java.util.List;
 
 import org.apache.ibatis.annotations.Param;
 
-import wy.o2o.mvc.Entity.ShopCategory;
+import wy.o2o.mvc.entity.ShopCategory;
 
 public interface ShopCategoryDao {
 	/**

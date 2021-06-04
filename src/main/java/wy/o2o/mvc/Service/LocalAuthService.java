@@ -1,10 +1,19 @@
-package wy.o2o.mvc.Service;
+package wy.o2o.mvc.service;
 
-import wy.o2o.mvc.Dto.LocalAuthExecution;
-import wy.o2o.mvc.Entity.LocalAuth;
-import wy.o2o.mvc.Exceptions.LocalAuthOperationException;
+import wy.o2o.mvc.dto.LocalAuthExecution;
+import wy.o2o.mvc.entity.LocalAuth;
+import wy.o2o.mvc.exceptions.LocalAuthOperationException;
 
 public interface LocalAuthService {
+
+	/**
+	 * 注册
+	 *
+	 * @param userName
+	 * @return
+	 */
+
+	LocalAuthExecution registerLocalAuthByUsernameAndPwd(String userName, String password, int userType);
 	/**
 	 * 通过帐号和密码获取平台帐号信息
 	 * 

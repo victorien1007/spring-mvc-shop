@@ -1,4 +1,4 @@
-package wy.o2o.mvc.Dao;
+package wy.o2o.mvc.dao;
 
 import static org.junit.Assert.assertEquals;
 
@@ -10,10 +10,10 @@ import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import wy.o2o.mvc.Base.BaseTest;
-import wy.o2o.mvc.Entity.Area;
-import wy.o2o.mvc.Entity.PersonInfo;
-import wy.o2o.mvc.Entity.Shop;
-import wy.o2o.mvc.Entity.ShopCategory;
+import wy.o2o.mvc.entity.Area;
+import wy.o2o.mvc.entity.PersonInfo;
+import wy.o2o.mvc.entity.Shop;
+import wy.o2o.mvc.entity.ShopCategory;
 
 public class ShopDaoTest extends BaseTest {
 	@Autowired

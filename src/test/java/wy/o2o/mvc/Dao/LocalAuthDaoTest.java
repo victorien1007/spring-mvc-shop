@@ -1,4 +1,4 @@
-package wy.o2o.mvc.Dao;
+package wy.o2o.mvc.dao;
 
 import static org.junit.Assert.assertEquals;
 
@@ -10,8 +10,8 @@ import org.junit.runners.MethodSorters;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import wy.o2o.mvc.Base.BaseTest;
-import wy.o2o.mvc.Entity.LocalAuth;
-import wy.o2o.mvc.Entity.PersonInfo;
+import wy.o2o.mvc.entity.LocalAuth;
+import wy.o2o.mvc.entity.PersonInfo;
 
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
 public class LocalAuthDaoTest extends BaseTest {

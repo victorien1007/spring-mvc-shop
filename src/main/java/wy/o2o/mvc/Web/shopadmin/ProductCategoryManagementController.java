@@ -1,4 +1,4 @@
-package wy.o2o.mvc.Web.shopadmin;
+package wy.o2o.mvc.web.shopadmin;
 
 import java.util.HashMap;
 import java.util.List;
@@ -13,13 +13,13 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 
-import wy.o2o.mvc.Dto.ProductCategoryExecution;
-import wy.o2o.mvc.Dto.Result;
-import wy.o2o.mvc.Entity.ProductCategory;
-import wy.o2o.mvc.Entity.Shop;
-import wy.o2o.mvc.Enums.ProductCategoryStateEnum;
-import wy.o2o.mvc.Exceptions.ProductCategoryOperationException;
-import wy.o2o.mvc.Service.ProductCategoryService;
+import wy.o2o.mvc.dto.ProductCategoryExecution;
+import wy.o2o.mvc.dto.Result;
+import wy.o2o.mvc.entity.ProductCategory;
+import wy.o2o.mvc.entity.Shop;
+import wy.o2o.mvc.enums.ProductCategoryStateEnum;
+import wy.o2o.mvc.exceptions.ProductCategoryOperationException;
+import wy.o2o.mvc.service.ProductCategoryService;
 
 @Controller
 @RequestMapping("/shopadmin")

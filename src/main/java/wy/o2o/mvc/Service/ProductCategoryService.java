@@ -1,10 +1,10 @@
-package wy.o2o.mvc.Service;
+package wy.o2o.mvc.service;
 
 import java.util.List;
 
-import wy.o2o.mvc.Dto.ProductCategoryExecution;
-import wy.o2o.mvc.Entity.ProductCategory;
-import wy.o2o.mvc.Exceptions.ProductCategoryOperationException;
+import wy.o2o.mvc.dto.ProductCategoryExecution;
+import wy.o2o.mvc.entity.ProductCategory;
+import wy.o2o.mvc.exceptions.ProductCategoryOperationException;
 
 public interface ProductCategoryService {
 	/**

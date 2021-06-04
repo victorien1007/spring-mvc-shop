@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper
-    PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
-    "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.imooc.o2o.dao.ProductCategoryDao">
+		PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+		"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="wy.o2o.mvc.dao.ProductCategoryDao">
 	<!-- 目的：为dao接口方法提供sql语句配置 -->
-	<select id="queryProductCategoryList" resultType="wy.o2o.mvc.Entity.ProductCategory"
-		parameterType="Long">
+	<select id="queryProductCategoryList" resultType="wy.o2o.mvc.entity.ProductCategory"
+			parameterType="Long">
 		<!-- 具体的sql -->
 		SELECT
 		product_category_id,
@@ -26,7 +26,7 @@
 		create_time, shop_id)
 		VALUES
 		<foreach collection="list" item="productCategory" index="index"
-			separator=",">
+				 separator=",">
 			(
 			#{productCategory.productCategoryName},
 			#{productCategory.priority},
@@ -37,9 +37,9 @@
 	</insert>
 	<delete id="deleteProductCategory">
 		DELETE FROM
-		tb_product_category
+			tb_product_category
 		WHERE
-		product_category_id = #{productCategoryId}
-		AND shop_id = #{shopId}
+			product_category_id = #{productCategoryId}
+		  AND shop_id = #{shopId}
 	</delete>
 </mapper>	

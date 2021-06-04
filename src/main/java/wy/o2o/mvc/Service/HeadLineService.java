@@ -1,11 +1,11 @@
-package wy.o2o.mvc.Service;
+package wy.o2o.mvc.service;
 
 import java.io.IOException;
 import java.util.List;
 
-import wy.o2o.mvc.Dto.HeadLineExecution;
-import wy.o2o.mvc.Dto.ImageHolder;
-import wy.o2o.mvc.Entity.HeadLine;
+import wy.o2o.mvc.dto.HeadLineExecution;
+import wy.o2o.mvc.dto.ImageHolder;
+import wy.o2o.mvc.entity.HeadLine;
 
 public interface HeadLineService {
 	public static final String HLLISTKEY = "headlinelist";
